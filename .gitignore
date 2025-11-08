@@ -1,0 +1,52 @@
+*.log
+.DS_Store
+.phpactor.json
+.phpunit.result.cache
+/.fleet
+/.idea
+/.nova
+/.phpunit.cache
+/.vscode
+/.zed
+/auth.json
+
+# Environment files (never commit secrets)
+.env
+.env.backup
+.env.production
+# Keep .env.example tracked (do NOT add a wildcard like .env.* that would hide it)
+
+# Dependency directories
+/node_modules
+/vendor
+
+# Front-end build artifacts.
+# Since you build locally and deploy the compiled assets, we TRACK /public/build.
+# Keep /public/hot ignored (temporary dev HMR marker).
+/public/hot
+
+# Symlink target created by `storage:link`
+/public/storage
+
+# Laravel storage & cache (runtime only). Entire storage ignored; adjust if you need persisted uploads.
+/storage
+/storage/*.key
+/storage/pail
+
+# Framework bootstrap caches
+/bootstrap/cache/*.php
+!bootstrap/cache/.gitignore
+
+# Homestead / environment config
+Homestead.json
+Homestead.yaml
+
+# OS noise
+Thumbs.db
+
+# Project backups (local only)
+/backup
+
+# DO track tests; removed `/tests` ignore so test suite is versioned.
+
+# NOTE: config/ IS tracked intentionally. Do NOT put secrets there; use env vars.
